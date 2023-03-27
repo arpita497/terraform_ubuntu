@@ -8,7 +8,7 @@ module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   version = "3.19.0"
 
-  name = "terraform-demo-vpc"
+  name = "terraform-new-vpc"
   cidr = "10.0.0.0/16"
 
   azs             = ["ap-south-1a", "ap-south-1b"]
