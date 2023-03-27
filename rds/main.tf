@@ -11,10 +11,10 @@ module "rds-db" {
 
   db_name  = "myrdsdb"
   username = "user"
-  password = "user"
+  password = "User@123"
   port     = "3306"
 
-  vpc_security_group_ids = ["sg-0e7a78055014d406a"]
+  vpc_security_group_ids = ["sg-041fb7149ed0c6df5"]
 
   maintenance_window = "Mon:00:00-Mon:03:00"
   backup_window      = "03:00-06:00"
@@ -26,7 +26,7 @@ module "rds-db" {
 
   # DB subnet group
   create_db_subnet_group = true
-  subnet_ids             = ["subnet-0db2e744633d06eb7", "subnet-026fd3e65436264e3"]
+  subnet_ids             = ["subnet-0672b9fed2b3c4c2e", "subnet-0c43be7fe5a5a9caa"]
 
   # DB parameter group
   family = "mysql5.7"
