@@ -2,7 +2,7 @@ module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.3.0"
 
-  name = "terrDemo-instance"
+  name = "terrDemo1-instance"
 
   ami                    = "ami-0f8ca728008ff5af4"
   instance_type          = "t2.micro"
