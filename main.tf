@@ -10,3 +10,6 @@ module "vpc" {
 module "ec2_instance" {
   source = "./ec2"
 }
+module "rds-db" {
+  source = "./rds"
+}
