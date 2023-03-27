@@ -4,6 +4,9 @@ provider "aws" {
         secret_key = "rLEz70iLUG1tt1zHT46xF6cAFRTrVICJFr/ITmDp"
 }
 
+module "vpc" {
+  source = "./vpc"
+}
 module "ec2_instance" {
   source = "./ec2"
 }
