@@ -7,9 +7,3 @@ provider "aws" {
 module "vpc" {
   source = "./vpc"
 }
-module "ec2_instance" {
-  source = "./ec2"
-}
-module "rds-db" {
-  source = "./rds"
-}
