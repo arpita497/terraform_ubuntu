@@ -8,8 +8,8 @@ module "ec2_instance" {
   instance_type          = "t2.micro"
   key_name               = "new-keypair"
   monitoring             = true
-  vpc_security_group_ids = ["sg-041fb7149ed0c6df5"]
-  subnet_id              = "subnet-0834a179c540198ea"
+  vpc_security_group_ids = ["sg-0196807dda5c80d08"]
+  subnet_id              = "subnet-0b5245948e8902781"
 
   tags = {
     Terraform   = "true"
