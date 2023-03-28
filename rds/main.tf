@@ -29,10 +29,10 @@ module "rds-db" {
   subnet_ids             = ["subnet-04d49fa3219b46c6c", "subnet-023b4edb8cd7f9cd0"]
 
   # DB parameter group
-  family = "mysql5.7"
+  family = var.family
 
   # DB option group
-  major_engine_version = "5.7"
+  major_engine_version = var.major_engine_version
 
   #multi_az
   multi_az = var.multi_az
